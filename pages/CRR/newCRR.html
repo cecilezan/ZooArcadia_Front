@@ -1,0 +1,67 @@
+<div class="hero-scene text-center text-white">
+    <div class="hero-scene-content">
+        <h1>Nouveau Compte-rendu de visite vétérinaire</h1>
+    </div>
+</div>
+
+<div class="container">
+    <form>
+        <div class="mb-3">
+            <label for="InputPrenom" class="form-label">Nom du vétérinaire</label>
+            <input disabled type="search" class="form-control" id="InputPrenom" placeholder="Nom vétérinaire" value="Jane">
+        </div>
+
+        <div class="mb-3">
+            <label for="selectHabitat" class="form-label">Habitat de l'animal</label>
+            <select class="form-select" id="selectHabitat">
+                <option selected>Choix de l'habitat</option>
+                <option value="Marais">Marais</option>
+                <option value="Savane">Savane</option>
+                <option value="Jungle">Jungle</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="InputAnimalName" class="form-label">Nom de l'animal</label>
+            <input type="search" class="form-control" id="InputAnimalName" placeholder="Nom animal" value="Winnie">
+        </div>
+
+        <div class="mb-3">
+            <label for="InputDate" class="form-label">Date et heure de visite</label>
+            <input type="datetime-local" class="form-control" id="InputDate">
+        </div>
+
+        <div class="mb-3">
+          <label for="InputStateAnimal" class="form-label">Etat Général de l'animal</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="InputStateAnimal" id="ARadio" checked>
+            <label class="form-check-label" for="ARadio">Excellente forme</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="InputStateAnimal" id="BRadio" >
+            <label class="form-check-label" for="BRadio">Bonne forme</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="InputStateAnimal" id="CRadio">
+            <label class="form-check-label" for="CRadio">A surveiller</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="InputStateAnimal" id="DRadio">
+            <label class="form-check-label" for="DRadio">Hospitalisé</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="InputAvisVeto" class="form-label">L'avis du vétérinaire</label>
+          <textarea class="form-control" id="InputAvisVeto"></textarea>      
+        </div>
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+            <button type="submit" class="btn btn-danger">Annuler</button>
+        </div>
+       
+      </form>
+
+
+</div>
