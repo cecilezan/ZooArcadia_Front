@@ -5,7 +5,7 @@ export const allRoutes = [
     new Route("/", "Accueil", "/pages/home.html",[]),
     new Route("/habitats", "Les Habitats", "/pages/habitat.html", []),
     new Route("/signin", "Connexion","/pages/auth/signin.html",["disconnected"],"/js/auth/signin.js"),
-    new Route("/account", "Mon compte","/pages/auth/account.html",["admin", "employe"]),
+    new Route("/account", "Mon compte","/pages/auth/account.html",[],"/js/auth/signin.js"),
     new Route("/CrrVeto", "Compte Rendu Vétérinaires","/pages/CRR/allCRR.html",["admin", "employe", "veto"]),
     new Route("/nouveauCRR", "Nouveau compte rendu de visites","/pages/CRR/newCRR.html",["admin","veto"]),
     new Route("/maintenance", "Partie en maintenance","/pages/maintenance.html",[]),
